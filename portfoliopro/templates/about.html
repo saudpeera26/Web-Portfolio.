@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% comment %} {% endcomment %}
+<section id="about">
+  <div id="aboutHeader" class="sectionHeader">
+    <p>Get To Know More</p>
+    <h3>About Me</h3>
+  </div>
+  <div id="aboutContainer" class="sectionContainer">
+    
+    <div id="aboutContent">
+      <div id="aboutBanners">
+        <div class="aboutBanner" id="education">
+          <img src="{% static 'images/graduation-hat.png' %}" alt="" class="aboutBannerIcon"/>
+          <h5>Education</h5>
+          <p>Bachelor Of Science</p>
+          <p>Computer Science</p>
+        </div>
+        <div class="aboutBanner" id="certification">
+          <img src="{% static 'images/certificate.png' %}" alt="" class="aboutBannerIcon"/>
+          <h5>Certification</h5>
+          <p>Master In</p>
+          <p>Full Stack Development</p>
+        </div>
+      </div>
+      <div id="aboutDetails">
+        <p>
+          As a passionate and motivated web developer , my objective is to leverage my skills to contribute effectively to a
+dynamic team. I aim to continuously learn and grow in the field of web development while delivering high quality, user-friendly websites and applications that meet the needs of clients and users alike. I am eager to
+collaborate, innovate, and make a positive impact in the ever-evolving world of technology.
+        </p>
+      </div>
+    </div>
+    <!-- <div id="aboutPic">
+      <img src="/Media/Officals/aboutProficePic.jpg" alt="About Me" />
+    </div> -->
+  </div>
+</section>
+{% comment %}  {% endcomment %}
+{% endblock content %}
+
+
+
+
+
+
+

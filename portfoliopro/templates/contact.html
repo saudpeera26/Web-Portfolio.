@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<section id="contact">
+  <div id="ContactsHeader" class="sectionHeader">
+    <p>Get in Touch</p>
+    <h3>With Me</h3>
+  </div>
+  <div id="contactContainer" class="sectionContainer">
+    <div id="contactForm">
+      <form action="">
+        <label for="visitorName">Your Name</label><br />
+        <input type="text" for="yourName" /><br />
+        <label for="visitorEmail">Your Email</label><br />
+        <input type="email" for="visitorEmail" /><br />
+        <label for="visitorMessage">Your Message</label><br />
+        <textarea
+          name="visitorMessage"
+          id="visitorMessage"
+          cols="30"
+          rows="5"
+        ></textarea
+        ><br />
+        <div id="contactFormBtns">
+          <button id="contactSubmitBtn" class="contactBtn" type="submit">
+            Send
+          </button>
+          <button id="contactResetBtn" class="contactBtn" type="reset">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="socialLinks">
+      <div id="socailLinksHeader">
+        <p>Also connect with me on</p>
+      </div>
+      <div id="socialLinksIcons">
+        <div class="socialLink">
+          <div class="link">
+            <a href="#twitterx"
+            ><img src="{% static 'images/twitter.png' %}" alt="Twitter X"
+          /></a>
+          </div>
+          <div class="link">
+            <a href="#theards"
+            ><img src="{% static 'images/threads.png' %}" alt="Theards"
+          /></a>
+          </div>
+          <div class="link">
+            <a href="https://www.instagram.com/saud_peera/"
+            ><img src=" {% static 'images/instagram.png' %} " alt="Instagram"
+          /></a>
+          </div>
+          <div class="link">
+            <a href="https://www.facebook.com/saud.peera.96"
+            ><img src=" {% static 'images/facebook.png' %} " alt="FaceBook"
+          /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
+
+
+
+
+
+
+

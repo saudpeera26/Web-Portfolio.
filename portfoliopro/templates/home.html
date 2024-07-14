@@ -1,0 +1,75 @@
+
+{% extends "base.html" %}
+
+{% block title %} Saud Peera{% endblock title %}
+{% block content %}
+{% load static %}
+
+
+{% comment %} NavBar  {% endcomment %}
+
+
+{% include "header.html" %}
+
+
+{% comment %} NavBar {% endcomment %}
+<section class="section">
+  <div class="section__container">
+    <div class="content">
+      <p class="subtitle">HELLO</p>
+      <h1 class="title">
+        I'm <span>Saudahmad Peera<br />a</span> Full Stack Developer
+      </h1>
+      <!-- <p class="description">
+        Welcome to my portfolio! I'm Saud, a skilled and
+        creative web developer with a passion for creating beautiful,
+        responsive, and user-friendly websites. I've worked on a variety of
+        web projects, ranging from personal blogs to e-commerce platforms.
+      </p> -->
+      <div class="action__btns">
+        <a href="{% static '/portfoliopro/Saudahmad_Resume.pdf' %}" download><button class="hire__me">Resume</button></a>
+        <button class="portfolio">Contact Info</button>
+      </div>
+      <div class="links">
+        <a href="https://github.com/saudpeera26"><img src="{% static 'images/github.png' %}" alt="Github"/></a>
+        <a href="https://www.linkedin.com/in/saudahmad-peera-25a8bb225/"><img src="{% static 'images/linkedin.png' %}" alt=""/></a>
+      </div>
+    </div>
+    <div class="image">
+      <img src="{% static 'images/my photo.jpg' %}" alt="profile" />
+    </div>
+  </div>
+</section>
+{% comment %} ABout ME {% endcomment %}
+{% include "about.html" %}
+
+
+
+{% comment %}  {% endcomment %}
+{% include "skills.html" %}
+{% comment %}  {% endcomment %}
+
+
+
+{% comment %}  {% endcomment %}
+{% include "projects.html" %}
+{% comment %}  {% endcomment %}
+
+
+{% comment %}  {% endcomment %}
+{% include "contact.html" %}
+{% comment %}  {% endcomment %}
+
+
+{% comment %}  {% endcomment %}
+{% include "footer.html" %}
+{% comment %}  {% endcomment %}
+
+{% endblock content %}
+
+
+
+
+
+
+
